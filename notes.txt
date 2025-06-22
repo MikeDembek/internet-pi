@@ -1,0 +1,2 @@
+# To run ansible playbook:
+ansible-playbook main.yml
