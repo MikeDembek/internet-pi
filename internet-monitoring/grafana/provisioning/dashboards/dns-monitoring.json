@@ -19,7 +19,7 @@
   "links": [],
   "panels": [
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -79,7 +79,7 @@
       "type": "gauge"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -161,7 +161,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -234,7 +234,7 @@
       "type": "stat"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -316,7 +316,7 @@
       "type": "timeseries"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {
@@ -450,7 +450,7 @@
       "type": "table"
     },
     {
-      "datasource": "Prometheus",
+      "datasource": "prometheus",
       "fieldConfig": {
         "defaults": {
           "color": {

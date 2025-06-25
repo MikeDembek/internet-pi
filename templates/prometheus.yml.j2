@@ -49,7 +49,7 @@ scrape_configs:
       - targets: ['172.17.0.1:9817']
 {% endif %}
 
-{% if dns_monitoring_enable %}
+{% if dns_monitoring_enable is defined and dns_monitoring_enable %}
   - job_name: 'dns_udp'
     metrics_path: /probe
     params:
@@ -57,7 +57,7 @@ scrape_configs:
     static_configs:
       - targets:
 {% for server in dns_monitoring_servers %}
-        - {{ server }}
+        - {{ server }}:53
 {% endfor %}
     relabel_configs:
       - source_labels: [__address__]
