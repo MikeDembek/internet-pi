@@ -150,11 +150,6 @@
           "expr": "probe_dns_lookup_time_seconds{job=\"dns_udp\"}",
           "legendFormat": "{{instance}} - UDP",
           "refId": "A"
-        },
-        {
-          "expr": "probe_dns_lookup_time_seconds{job=\"dns_tcp\"}",
-          "legendFormat": "{{instance}} - TCP",
-          "refId": "B"
         }
       ],
       "title": "DNS Query Response Time",
@@ -307,7 +302,7 @@
       "pluginVersion": "8.0.0",
       "targets": [
         {
-          "expr": "avg_over_time(probe_success{job=~\"dns.*\"}[5m])",
+          "expr": "(probe_success{job=~\"dns.*\"})",
           "legendFormat": "{{instance}} - {{job}}",
           "refId": "A"
         }
